@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+</head>
+
+
+<body>
+
+	<h1>Cadastro de pessoa</h1>
+
+	<form action="cadastro.php" method="POST" >
+		Nome:  <input type="text" name="nome" /><br><br>
+		Sobrenome: <input type="text" name="sobrenome" /><br><br>
+		Senha: <input type="password" name="senha" /><br><br>
+		Gênero:<br>
+		<input type="radio" name="genero" value="Masculino" checked /> Masculino<br>
+		<input type="radio" name="genero" value="Feminino" /> Feminino<br><br>
+		Idade: <input type="number" name="idade" /><br><br>
+		Preferências de lazer:<br>
+		<input type="checkbox" name="preferencias[]" value="Viagem" /> Viagem<br>
+		<input type="checkbox" name="preferencias[]" value="Mergulho"/>Mergulho<br>
+		<input type="checkbox" name="preferencias[]" value="Navegação na Internet"/>Navegação na Internet<br>
+		<input type="checkbox" name="preferencias[]" value="Videogame"/>Videogame<br>
+		<input type="checkbox" name="preferencias[]" value="Ciclismo"/>Ciclismo<br>
+		<input type="checkbox" name="preferencias[]" value="Atletismo"/>Atletismo<br>
+		<input type="checkbox" name="preferencias[]" value="Pesca"/>Pesca<br><br>
+		<input type="submit" value="Cadastrar" />
+	</form>
+
+</body>
+
+</html>

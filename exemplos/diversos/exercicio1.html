@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+	<meta charset="UTF-8" />
+
+</head>
+
+<body> 
+
+	<form action="exercicio1.php" method="POST">
+	
+		Nome: <input type="text" name="nome"/><br><br>
+		Idade: <input type="number" name="idade"/><br><br>
+		Nascimento: <input type="date" name="nasc"/><br><br>
+		
+		Mini-curriculo:<br/>
+		<textarea name="cirruclo"> </textarea> <br>
+		
+		Curso: <br/>
+		<input type="radio" name="curso" value="Sistemas de Informação" checked/> Sistemas de Informação <br>
+		<input type="radio" name="curso" value="Ciências da Computação"/> Ciências da Computação <br>
+		<input type="radio" name="curso" value="Jogos Digitais"/> Jogos Digitais <br><br>
+		
+		Áreas de interesse: <br>
+		<input type="checkbox" name="areaInteresse[]" value="Redes de computadores"/>Redes de computadores <br>
+		<input type="checkbox" name="areaInteresse[]" value="Programação Web"/>Programação Web <br>
+		<input type="checkbox" name="areaInteresse[]" value="Programação desktop"/>Programação desktop <br>
+		<input type="checkbox" name="areaInteresse[]" value="Inteligência artificial"/>Inteligência artificial <br>
+		<input type="checkbox" name="areaInteresse[]" value="Banco de dados"/>Banco de dados <br><br>
+		
+		Cidade de origem:<br>
+		<select name="cidade">
+			<option value="Santa Maria"> Santa Maria </option>
+			<option value="São Pedro do Sul"> São Pedro do Sul </option>
+			<option value="Agudo"> Agudo </option>
+		</select><br><br>
+		
+		Estado: <br>
+		<input list="estados" name="estados">
+		<datalist id="estados">
+			<option value="RS">
+			<option value="SC">
+			<option value="SP">
+			<option value="RJ">
+		</datalist><br><br>
+		
+		<input type="submit" value="Cadastrar" />
+		
+	</form>
+
+</body>
+
+</html>
